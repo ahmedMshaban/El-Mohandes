@@ -7,7 +7,7 @@ body {
 }
 /*************Header**************/
 .navbar-trans {
-  background-color: red;
+  background-color: #2d3438;
   border: none;
   transition: top 1s ease;
 }
@@ -31,5 +31,5 @@ body {
 }
 /*************Header**************/
 footer {
-  background: pink;
+  background: #2d3438;
 }
