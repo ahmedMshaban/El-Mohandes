@@ -1,6 +1,7 @@
 /*General*/
 body {
   padding-top: 135px;
+  font-family: 'Montserrat', sans-serif;
 }
 .light-grey {
   background-color: #e6e9ed!important
@@ -15,6 +16,12 @@ p,li {
   font-size: 18px;
 }
 /*************Header**************/
+#myNavbar {
+  margin-bottom: 5px;
+}
+.navbar-brand img {
+  max-width: 320px;
+}
 .navbar-trans {
   background-color: #2d3438;
   border: none;
@@ -38,7 +45,6 @@ p,li {
 	padding: 10px auto;
 	font-size: 12px;
 }
-
 .navbar-default .navbar-toggle {
   border-color: #fff;
 }
@@ -57,10 +63,24 @@ p,li {
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
   color: #ddd;
 }
+.dropdown-menu>li>a {
+  padding: 10px 19px;
+}
+
+/*************SLider**************/
+.slider-section h1 {
+  font-size: 26px;
+}
+.slider-section ul {
+  color: rgb(137, 3, 3);
+  font-weight: 600;
+  font-size: 20px;
+}
 
 /*************Our experience**************/
 .our-experience {
   text-align: center;
+  margin: 50px 0;
 }
 .our-experience h2 {
   text-align: center;
@@ -76,12 +96,36 @@ p,li {
 /*************Footer**************/
 footer {
   background: #2d3438;
+  padding: 50px 0;
 }
-
+footer .main-footer a {
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 0;
+  display: inline-block;
+}
+footer p {
+  color: #fff;
+}
+footer .main-footer a:hover {
+  color: #ddd;
+}
 /*************Responsive**************/
+@media screen and (max-width: 480px) {
+  .navbar-brand img {
+    max-width: 230px;
+  }
+}
 @media screen and (max-width: 767px) {
   body {
     padding-top: 45px;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #fff;
+    padding: 20px 15px 5px 25px;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
+    color: #ddd;
   }
 }
 @media screen and (min-width: 768px) {
@@ -95,5 +139,19 @@ footer {
   }
   .auto-clear .col-md-4:nth-child(5) {
     clear: left;
+  }
+}
+@media screen and (min-width: 1001px) {
+  .our-experience .image-wrap {
+    height: 300px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .our-experience .image-wrap img {
+    max-height: 300px;
   }
 }
