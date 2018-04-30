@@ -93,6 +93,53 @@ p,li {
   box-shadow: 0 1px 2px rgba(0,0,0,0.15);
 }
 
+/*************Internal pages**************/
+.applications main h1,
+.breakout-unit main h1,
+.topopen-torque main h1,
+.contact-us main h1,
+.Hydraulic-power-pack h1,
+.Jar-tester h1,
+.pipe-cleaning h1,
+.water-blasting h1,
+.torque h1 {
+  font-weight: bold;
+}
+.applications main li,
+.breakout-unit main li,
+.topopen-torque main li,
+.Hydraulic-power-pack main li,
+.Jar-tester main li,
+.pipe-cleaning main li,
+.water-blasting main li,
+.torque main li {
+    line-height: 2;
+}
+.applications main li a {
+    color: #333;
+}
+.topopen-torque main img,
+.contact-us form,
+.water-blasting main img,
+.torque main img {
+  margin-top: 20px;
+}
+.applications main,
+.breakout-unit main,
+.topopen-torque main,
+.contact-us main,
+.Hydraulic-power-pack main,
+.Jar-tester main,
+.pipe-cleaning main,
+.water-blasting main,
+.torque main {
+  margin-bottom: 50px;
+}
+.Hydraulic-power-pack .row .row,
+.Hydraulic-power-pack .row .row p {
+  margin: 25px 0;
+}
+
 /*************Footer**************/
 footer {
   background: #2d3438;
@@ -142,7 +189,7 @@ footer .main-footer a:hover {
   }
 }
 @media screen and (min-width: 1001px) {
-  .our-experience .image-wrap {
+  .image-wrap {
     height: 300px;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -151,7 +198,15 @@ footer .main-footer a:hover {
     -ms-flex-align: center;
     align-items: center;
   }
-  .our-experience .image-wrap img {
+  .image-wrap img {
     max-height: 300px;
+  }
+  .Hydraulic-power-pack .row .row {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+   -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
