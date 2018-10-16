@@ -98,10 +98,13 @@ p,li {
 .breakout-unit main h1,
 .topopen-torque main h1,
 .contact-us main h1,
+.conveyor main h1,
 .Hydraulic-power-pack h1,
 .Jar-tester h1,
 .pipe-cleaning h1,
 .water-blasting h1,
+.about-us h1,
+.bucking h1,
 .torque h1 {
   font-weight: bold;
 }
@@ -121,6 +124,7 @@ p,li {
 .topopen-torque main img,
 .contact-us form,
 .water-blasting main img,
+.bucking main img,
 .torque main img {
   margin-top: 20px;
 }
@@ -132,12 +136,113 @@ p,li {
 .Jar-tester main,
 .pipe-cleaning main,
 .water-blasting main,
+.bucking main,
+.about-us main,
+.conveyor main,
 .torque main {
   margin-bottom: 50px;
 }
 .Hydraulic-power-pack .row .row,
 .Hydraulic-power-pack .row .row p {
   margin: 25px 0;
+}
+.breakout-unit h2,
+.bucking h2,
+.conveyor h3,
+.Pipe-rotators h2,
+.topopen-torque h2,
+.water-blasting h2,
+.contact-us h2{
+  font-size: 25px;
+}
+.conveyor h2{
+  font-size:30px;
+}
+.conveyor main img{
+
+  margin-bottom: 10px;
+}
+.Pipe-rotators main img{
+  height: 300px;
+}
+.Small-drilling main .tall{
+  height: 550px;
+}
+.conveyor main .down,
+.pipe-cleaning main .down{
+  margin-top: 15px;
+}
+.arabic-home .eng,
+.english-home .arab,
+.about-us-Arabic .eng,
+.about-us .arab{
+  font-weight:bold;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.arabic-home ul{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+.arabic-home li{
+  background-image: url(arrow.gif);
+  background-repeat: no-repeat;
+  background-position: 100% .4em;
+	padding-right: .6em;
+}
+
+.arabic-home ,
+.about-us-Arabic{
+  text-align: right;
+}
+
+.Pipe-rotators main .row,
+.Small-drilling main .down
+{
+  margin-bottom: 20px;
+}
+
+.Pipe-rotators main .center{
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  align-content: center;
+}
+.conveyor main .content{
+  padding-bottom: 50px;
+}
+.contact-us input ,
+.contact-us select,
+.contact-us textarea{
+    width: 100%;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.contact-us textarea{
+  height: 80px;
+}
+
+.contact-us form{
+  margin-top: 10px;
+}
+.contact-us main button {
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  align-items: center;
 }
 
 /*************Footer**************/
@@ -174,6 +279,35 @@ footer .main-footer a:hover {
   .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
     color: #ddd;
   }
+  .navbar-default .navbar-nav>.openMobile>a, .navbar-default .navbar-nav>.openMobile>a:hover, .navbar-default .navbar-  nav>.openMobile>a:focus {
+     color: #555;
+    background-color: #e7e7e7;
+   }
+   .openMobile>a {
+     outline: 0;
+   }
+   .openMobile>.dropdown-menu {
+     display: block;
+   }
+   .navbar-nav .openMobile .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+   }
+   .navbar-default .navbar-nav .openMobile .dropdown-menu>li>a {
+    color: #fff;
+    padding: 20px 15px 5px 25px;
+    }
+.navbar-nav .openMobile .dropdown-menu>li>a {
+    line-height: 20px;
+}
+.navbar-top .navbar-nav.pull-left {
+    display: none;
 }
 @media screen and (min-width: 768px) {
   .slider-section  {
